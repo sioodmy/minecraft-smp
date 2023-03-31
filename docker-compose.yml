@@ -6,7 +6,7 @@ services:
     environment:
       EULA: "true"
       TYPE: PURPUR
-      VANILLATWEAKS_SHARECODE: "GAAHRn"
+      VANILLATWEAKS_SHARECODE: "8pDzN4"
       MOTD: "\u00a7f\u00a7l1LO\u00a7e\u00a7l SMP \u00a7e\u00a7l\u00a7kkutasiak\u00a7r\n\u00a77\u22d9 half-anarchy \u00a7e\u00a7l1.19.4"
       FORCE_GAMEMODE: true
       COPY_CONFIG_DEST: "/data"
