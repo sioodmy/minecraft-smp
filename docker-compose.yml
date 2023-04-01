@@ -11,6 +11,8 @@ services:
       FORCE_GAMEMODE: true
       COPY_CONFIG_DEST: "/data"
       SYNC_SKIP_NEWER_IN_DESTINATION: false
+      DIFFICULTY: "hard"
+      JVM_OPTS: "-XX:+UseG1GC -Dsun.rmi.dgc.server.gcInterval=2147483646 -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M"
       OPS: "a6395a8e-d178-4b6f-b03a-456578f08ea1"
       SNOOPER_ENABLED: false
       ICON: "https://media.discordapp.net/attachments/980585755304931408/1091491664561983629/cropped.jpg"
@@ -18,7 +20,10 @@ services:
       ANNOUNCE_PLAYER_ACHIEVEMENTS: true
       ALLOW_NETHER: true
       MAX_PLAYERS: 100
-      SPIGET_RESOURCES: "19254,27448,81534,85811,102931,34781,57272,79295,28140,1331"
+      SPIGET_RESOURCES: "19254,27448,81534,85811,102931,34781,57272,79295,28140,1331,4047"
+      RCON_CMDS_STARTUP:  |-
+        gamerule doInsomnia false
+        gamerule spawnRadius 420
       VIEW_DISTANCE: 7
       SIMULATION_DISTANCE: 4
       NETWORK_COMPRESSION_THRESHOLD: 256
