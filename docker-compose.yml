@@ -15,7 +15,7 @@ services:
       JVM_OPTS: "-XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1"
       OPS: "a6395a8e-d178-4b6f-b03a-456578f08ea1"
       SNOOPER_ENABLED: false
-      ICON: "https://media.discordapp.net/attachments/980585755304931408/1091491664561983629/cropped.jpg"
+      ICON: "https://media.discordapp.net/attachments/1061981328884650126/1092076004954087565/cropped.jpg"
       OVERRIDE_ICON: true
       ANNOUNCE_PLAYER_ACHIEVEMENTS: true
       ALLOW_NETHER: true
@@ -29,7 +29,7 @@ services:
       NETWORK_COMPRESSION_THRESHOLD: 256
       SPAWN_PROTECTION: 0
       ONLINE-MODE: false
-      MEMORY: 6G
+      MEMORY: 4G
     ports:
       - "25565:25565"
     volumes:
