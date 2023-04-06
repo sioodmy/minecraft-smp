@@ -33,6 +33,7 @@ services:
       MEMORY: 14G
     ports:
       - "25565:25565"
+      - "19132:19132"
     volumes:
       - ./mc:/data
       - ./config:/config
