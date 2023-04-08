@@ -23,7 +23,7 @@
 General:
   Locale: en
   Default PvP: true
-  PvP Blood: false
+  PvP Blood: true
   Player Drop Mode: ALWAYS
   Ignore No Damage Hits: false
   Auto Soup:
@@ -75,9 +75,9 @@ Disable:
 Tagged In Combat:
   Enabled: true
   Time: 10
-  NameTag Prefix: '&4&lW klepie '
+  NameTag Prefix: ''
   Color: '&c'
-  Glowing: true
+  Glowing: false
   Action Bar:
     Message: '&b&lKlepa &a<barsLeft>&c<barsPassed> &e&l<time> &b[sec]'
     Symbol: '▊'
@@ -101,9 +101,9 @@ Tagged In Combat:
         - 'tag'
   Punishments:
     Punish On Kick:
-      Enabled: true
+      Enabled: false
       # If Match Kick Reason is enabled, the punishment will be applied only if the kick reason matches the list below
-      Match Kick Reason: false
+      Match Kick Reason: true
       Kick Reasons:
       - 'Kicked for spamming'
       - 'disconnect.spam'
@@ -116,7 +116,7 @@ Tagged In Combat:
         Experience: true
         Armor: true
     Commands On PvPLog:
-      - '&c %p obsrał gacie i wyszedł w klepie'
+      - '&c %p wyszedł podczas klepy'
 
 # Should new players on your server be protected from PvP (If they want to PvP they can use /newbie disable)
 Newbie Protection:
