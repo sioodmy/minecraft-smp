@@ -30,7 +30,7 @@ services:
       NETWORK_COMPRESSION_THRESHOLD: 256
       SPAWN_PROTECTION: 0
       ONLINE-MODE: false
-      MEMORY: 14G
+      MEMORY: 25G
     ports:
       - "25565:25565"
       - "19132:19132"

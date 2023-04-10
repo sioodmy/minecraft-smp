@@ -73,7 +73,7 @@ Exploits:
     AlsoPreventHeadInside:
     - COMPOSTER
   SignExploit:
-    DestroyBadSignsOnChunkLoad: true
+    DestroyBadSignsOnChunkLoad: false
   Teleport:
     PearlPhasing: true
   TNTDupe:
