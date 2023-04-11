@@ -1,0 +1,86 @@
+#-----------------------------------------------------------------
+# ______      _   _            _    _ _     _ _       _ _     _
+# | ___ \    | | | |          | |  | | |   (_) |     | (_)   | |
+# | |_/ / ___| |_| |_ ___ _ __| |  | | |__  _| |_ ___| |_ ___| |_
+# | ___ \/ _ \ __| __/ _ \ '__| |/\| | '_ \| | __/ _ \ | / __| __|
+# | |_/ /  __/ |_| ||  __/ |  \  /\  / | | | | ||  __/ | \__ \ |_
+# \____/ \___|\__|\__\___|_|   \/  \/|_| |_|_|\__\___|_|_|___/\__|
+#
+#
+#-----------------------------------------------------------------
+
+# Language specification (localized language name)
+name: 'Čeština'
+
+# Plugin messages that are translatable
+# You can use colors denoted by "&" character and a hexadecimal
+# number ranging from 0-9 and a-f, or a letter signaling format:
+# &0 - black             &8 - dark gray
+# &1 - dark blue         &9 - blue
+# &2 - dark green        &a - green
+# &3 - dark aqua         &b - aqua
+# &4 - dark red          &c - red
+# &5 - dark purple       &d - purple/pink
+# &6 - gold              &e - yellow
+# &7 - gray              &f - white
+#-----------------------------------------------------------------
+# &l - bold              &n - underline
+# &o - italic            &r - reset color and format
+
+# You can also use these variables:
+# (player) - refers to operated player
+# (language) - refers to currently selected language
+# (mojang) - refers to whether player was found in Mojang's database or not (case insensitive)
+# (status) - refers to whitelist status
+messages:
+  disabled: '&cWhitelist vypnut.'
+  enabled: '&aWhitelist zapnut.'
+  status:
+    msg: '&6Whitelist je (status)&6.'
+    enabled: '&azapnut'
+    disabled: '&cvypnut'
+  added: '&7Hráč &e(player) &apřidán &7do whitelistu.'
+  removed: '&7Hráč &e(player) &codebrán &7z whitelistu.'
+  mojang-player:
+    message: '&8- &aRegistrovaný &7hráč Minecraftu: (mojang)'
+    true: '&aANO'
+    false: '&cNE'
+    name: '&8- &aRegistrované &7jméno: &e(player)'
+  language: '&aJazyk &e(language) &anastaven'
+  reload: '&aKonfigurace znovu načtena'
+  import: '&aProveden import vanilla whitelistu. Vypni vanilla whitelist a zapni BetterWhitelist.'
+  import_player: '&aImport hráče &e(player)&a z vanilla whitelistu.'
+  list:
+    header: '&7Seznam hráčů ve whitelistu'
+    separator: '&8----------------------------------------------'
+    line: '&8- &e(player) &6&l>>> (mojang)'
+    footer: '&8- &7Jméno hráče &6&l>>> &7Registrovaný Minecraft hráč'
+    empty: '&8- &cSeznam je prázdný'
+  error:
+    whitelist:
+      already-enabled: '&cWhitelist již je zapnutý.'
+      already-disabled: '&cWhitelist již je vypnutý.'
+    already-in-whitelist: '&cHráč &e(player) &cjiž je ve whitelistu.'
+    not-found:
+      in-whitelist: '&cHráč &e(player) &cnebyl ve whitelistu nalezen.'
+      in-mojang: '&cHráč &e(player) &czřejmě neexistuje v uživatelské databázi Mojangu.'
+    internal: '&cVyskytla se vnitřní chyba. Prosím, kontaktuj autora pluginu.'
+    parse: '&cNačtený whitelist je ve špatném formátu!'
+    permission: '&cPardon, ale na toto nemáš oprávnění.'
+    saving: '&cWhitelist se nepovedlo uložit. Prosím, zkontroluj oprávnění k zápisu.'
+    language: '&cZvolený jazyk není k dispozici.'
+  usage:
+    - '&7Použití: /wl &a<subcommand> &e[entry]'
+    - '&8&o  - &6on &5&o=> &7zapíná whitelist (oprávnění &2&lbetterwhitelist.admin&7)'
+    - '&8&o  - &6off &5&o=> &7vypíná whitelist (oprávnění &2&lbetterwhitelist.admin&7)'
+    - '&8&o  - &6add &e<playername> &5&o=> &7přidává hráče do whitelistu (oprávnění &2&lbetterwhitelist.add&7)'
+    - '&8&o  - &6remove &e<playername> &5&o=> &7odebírá hráče z whitelistu (oprávnění &2&lbetterwhitelist.remove&7)'
+    - '&8&o  - &6list &5&o=> &7vypíše seznam všech hráčů ve whitelistu (oprávnění &2&lbetterwhitelist.list&7)'
+    - '&8&o  - &6status &5&o=> &7vypíše status whitelistu (zapnut/vypnut) (oprávnění &2&lbetterwhitelist.admin&7)'
+    - '&8&o  - &6reload &5&o=> &7znovu načte konfiguraci a whitelist (oprávnění &2&lbetterwhitelist.admin&7)'
+    - '&8&o  - &6lang &e[lang_code] &5=> &7vypíše nebo nastaví jazyk (oprávnění &2&lbetterwhitelist.admin&7)'
+    - '&8&o  - &6import &5&o=> &7importuje hráče z vanilla whitelistu (oprávnění &2&lbetterwhitelist.admin&7)'
+    - '&8&o  - &6version &5&o=> &7zobrazit verzi pluginu (oprávnění &2&lbetterwhitelist.admin&7)'
+  kick: '&cNejsi na whitelistu!'
+  online_player_update: '&aHráč &e(old_player)&a nalezen ve whitelistu si změnil nick na &e(new_player)&a.'
+  version: '&aVerze pluginu (version)'

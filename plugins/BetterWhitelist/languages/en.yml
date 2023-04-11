@@ -1,0 +1,86 @@
+#-----------------------------------------------------------------
+# ______      _   _            _    _ _     _ _       _ _     _
+# | ___ \    | | | |          | |  | | |   (_) |     | (_)   | |
+# | |_/ / ___| |_| |_ ___ _ __| |  | | |__  _| |_ ___| |_ ___| |_
+# | ___ \/ _ \ __| __/ _ \ '__| |/\| | '_ \| | __/ _ \ | / __| __|
+# | |_/ /  __/ |_| ||  __/ |  \  /\  / | | | | ||  __/ | \__ \ |_
+# \____/ \___|\__|\__\___|_|   \/  \/|_| |_|_|\__\___|_|_|___/\__|
+#
+#
+#-----------------------------------------------------------------
+
+# Language specification (localized language name)
+name: 'English'
+
+# Plugin messages that are translatable
+# You can use colors denoted by "&" character and a hexadecimal
+# number ranging from 0-9 and a-f, or a letter signaling format:
+# &0 - black             &8 - dark gray
+# &1 - dark blue         &9 - blue
+# &2 - dark green        &a - green
+# &3 - dark aqua         &b - aqua
+# &4 - dark red          &c - red
+# &5 - dark purple       &d - purple/pink
+# &6 - gold              &e - yellow
+# &7 - gray              &f - white
+#-----------------------------------------------------------------
+# &l - bold              &n - underline
+# &o - italic            &r - reset color and format
+
+# You can also use these variables:
+# (player) - refers to operated player
+# (language) - refers to currently selected language
+# (mojang) - refers to whether player was found in Mojang's database or not (case insensitive)
+# (status) - refers to whitelist status
+messages:
+  disabled: '&cWhitelist disabled.'
+  enabled: '&aWhitelist enabled.'
+  status:
+    msg: '&6Whitelist is (status)&6.'
+    enabled: '&aenabled'
+    disabled: '&cdisabled'
+  added: '&7Player &e(player) &aadded &7into the whitelist.'
+  removed: '&7Player &e(player) &cremoved &7from the whitelist.'
+  mojang-player:
+    message: '&8- &aRegistered &7Minecraft player: (mojang)'
+    true: '&aYES'
+    false: '&cNO'
+    name: '&8- &aRegistered &7name: &e(player)'
+  language: '&aLanguage &e(language) &aenabled'
+  reload: '&aConfig reloaded'
+  import: '&aVanilla whitelist imported. Turn vanilla whitelist off and turn BetterWhitelist on.'
+  import_player: '&aImported player &e(player)&a from vanilla whitelist.'
+  list:
+    header: '&7Players list in whitelist'
+    separator: '&8----------------------------------------------'
+    line: '&8- &e(player) &6&l>>> (mojang)'
+    footer: '&8- &7Player name &6&l>>> &7Registered Minecraft player'
+    empty: '&8- &cList is empty'
+  error:
+    whitelist:
+      already-enabled: '&cWhitelist is already enabled.'
+      already-disabled: '&cWhitelist is already disabled.'
+    already-in-whitelist: '&cPlayer &e(player) &cis already in the whitelist.'
+    not-found:
+      in-whitelist: '&cPlayer &e(player) &cnot found in the whitelist.'
+      in-mojang: '&cPlayer &e(player) &cseems non-existent in Mojang user database.'
+    internal: '&cAn internal error occured. Please contact the author of this plugin.'
+    parse: '&cLoaded whitelist is in incorrect format!'
+    permission: '&cSorry, you do not have permission to do that.'
+    saving: '&cWhitelist failed to save on disk. Make sure to check permissions for writing.'
+    language: '&cSelected language not available.'
+  usage:
+    - '&7Usage: /wl &a<podpříkaz> &e[argument]'
+    - '&8&o  - &6on &5&o=> &7turns whitelist on (permission &2&lbetterwhitelist.admin&7)'
+    - '&8&o  - &6off &5&o=> &7turns whitelist off (permission &2&lbetterwhitelist.admin&7)'
+    - '&8&o  - &6add &e<playername> &5&o=> &7adds player to whitelist (permission &2&lbetterwhitelist.add&7)'
+    - '&8&o  - &6remove &e<playername> &5&o=> &7removes player from whitelist (permission &2&lbetterwhitelist.remove&7)'
+    - '&8&o  - &6list &5&o=> &7lists all players in whitelist (permission &2&lbetterwhitelist.list&7)'
+    - '&8&o  - &6status &5&o=> &7show whitelist status (enabled/disabled) (permission &2&lbetterwhitelist.admin&7)'
+    - '&8&o  - &6reload &5&o=> &7reloads config and whitelist (permission &2&lbetterwhitelist.admin&7)'
+    - '&8&o  - &6lang &e[lang_code] &5&o=> &7check or set a language (permission &2&lbetterwhitelist.admin&7)'
+    - '&8&o  - &6import &5&o=> &7imports players from vanilla whitelist (permission &2&lbetterwhitelist.admin&7)'
+    - '&8&o  - &6version &5&o=> &7check plugin version (permission &2&lbetterwhitelist.admin&7)'
+  kick: '&cNie ma cie na whiteliscie! &rhttps://discord.gg/5PwEU26M3q'
+  online_player_update: '&aPlayer &e(old_player)&a found in whitelist has changed their username to &e(new_player)&a.'
+  version: '&aPlugin version (version)'
