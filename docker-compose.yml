@@ -47,14 +47,5 @@ services:
     - mc:/data:ro
     - ./mc-backups:/backups
     network_mode: "service:mc"
-
-  web:
-    image: nginx:latest
-    container_name: website
-    ports:
-      - "80:80"
-    volumes:
-      - ./website:/usr/share/nginx/html
-      - ./nginx:/etc/nginx/conf.d 
 volumes:
   mc: {}
